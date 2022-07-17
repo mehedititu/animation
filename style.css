@@ -1,0 +1,42 @@
+.animation {
+    height: 400px;
+    width: 800px;
+    background-color: mediumorchid;
+}
+.ball {
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    position: relative;
+    border-radius: 50%;
+    animation: moving 15s ease-in-out 0.5s infinite reverse;
+    animation-play-state: running;
+}
+
+@keyframes moving {
+    0% {
+        background-color: red;
+        left: 0;
+        top: 0;
+    }
+    25%{
+        top: 0;
+        left: 700px;
+        background-color: white;
+    }
+    50% {
+        top: 300px;
+        left: 700px;
+        background-color: yellow;
+    }
+    75% {
+        top: 300px;
+        left: 0;
+        background-color: blue;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        background-color: green;
+    }
+}
